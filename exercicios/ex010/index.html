@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídias em HTML5</title>
+  </head>
+  <body>
+    <h1>Trabalhando com imagens dinâmicas</h1>
+    <p>
+      Tente abrir esse site em vários dispositivos diferentes, ou simplesmente
+      altere o tamanho da janela do seu navegador para observar a mudança de
+      tamanho das imagens disponibilizadas.
+    </p>
+    <picture>
+      <source
+        media="(max-width: 750px )"
+        srcset="imagens/p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1050px )"
+        srcset="imagens/m.png"
+        type="image/png"
+      />
+      <img src="imagens/g.png" alt="Imagem pequena" />
+    </picture>
+
+    <h1>Trabalhando com reprodução de áudios</h1>
+    <p>Para reproduzir áudios em HTML 5, basta utilizar a tag &lt;audio&gt;</p>
+    <audio preload="metadata" controls>
+      <source
+        src="audios/JACKSON FAIVE (MARCO LUQUE) -- PAPA LÉGUIAS.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="audios/JACKSON FAIVE (MARCO LUQUE) -- PAPA LÉGUIAS.ogg"
+        type="audio/ogg"
+      />
+      <source
+        src="audios/JACKSON FAIVE (MARCO LUQUE) -- PAPA LÉGUIAS.wav"
+        type="audio/wav"
+      />
+      <p>
+        Seu navegador não foi capaz de carregar este arquivo de áudio, caso
+        deseje visualizar, por favor, clique
+        <a
+          href="audios/JACKSON FAIVE (MARCO LUQUE) -- PAPA LÉGUIAS.mp3"
+          download="jacksonfaive.mp3"
+          type="audio/mpeg"
+          >neste link</a
+        >.
+      </p>
+    </audio>
+    <!--Formatos para suportar todos navegadores: OGG, MP3, WAV-->
+    <!--Porém, não é recomendado o formato WAV, devido ao fato de ser muito pesado.-->
+    <h1>Reproduzindo vídeos</h1>
+    <p>
+      As principais extensões de vídeos suportadas pelo HTML 5 são: mp4, webm e
+      ogv
+    </p>
+    <video poster="imagens/g.png" controls height="500">
+      <source src="videos/video1.mp4" type="video/mp4" />
+      <source src="videos/Video1.m4v" type="video/mp4" />
+      <source src="videos/video1.webm" type="video/webm" />
+      <p>
+        Seu navegador não foi capaz de carregar este arquivo de áudio, caso
+        deseje visualizar, por favor, clique
+        <a href="videos/video1.mp4" download="videoplanta.mp4" type="video/mp4"
+          >neste link</a
+        >.
+      </p>
+    </video>
+    <h1>Inserindo Vídeos do youtube</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/3hng-hmSv2Y?start=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <br />
+
+    <a href="https://www.youtube.com/top10fodas" target="_blank" rel="external"
+      ><img src="imagens/favicon.ico" alt=""
+    /></a>
+    
+  </body>
+</html>

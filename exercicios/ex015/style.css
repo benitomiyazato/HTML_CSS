@@ -1,0 +1,36 @@
+body {
+  background-color: #83b0b5;
+}
+
+main {
+  background-color: white;
+  width: 800px;
+  padding: 15px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px #3a476686;
+}
+
+h1,
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px 1px 2px #141824b0;
+  color: #1e2335;
+  font: italic bolder 3em sans-serif;
+  /* font shorthand order: font-style -> font-weight -> font-size -> font-family */
+}
+h2 {
+  color: #83b0b5;
+  text-shadow: 1px 1px 2px #4e6a6d77;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #3a4766;
+  text-align: justify;
+}

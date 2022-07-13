@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1#main {
+  font-size: 2.5em;
+}
+
+.sub {
+  font-size: 2.2em;
+}
+
+.basic {
+  color:black;
+}
+
+.medium {
+  color:rgb(78, 78, 78);
+}
+
+.advanced {
+  color:rgb(124, 86, 86);
+}

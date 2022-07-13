@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outras formatações</title>
+  </head>
+  <body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte</h2>
+    <p>
+      O comando <code>System.out.println("");</code> é escrito na linguagem
+      Java. A tag que torna o texto mais legível, utilizado para códigos-fonte,
+      é a tag &lt;code&gt;.
+    </p>
+    <pre>
+    <code>
+public Class Calculator{
+    public static void main (String[] args){
+        Scanner sc = new Scanner(System.in);
+            System.out.println("Digite o primeiro número da soma!")
+            int num1 = sc.nextInt();
+            System.out.println("Digite o segundo número da soma!")
+            int num2 = sc.nextInt();
+            sc.close();
+            num3 = num1 + num2;
+            System.out.printf("A soma dos dois números é igual a %d!", num3);
+    }
+}
+    </code>
+    </pre>
+    <p>
+      Tudo que está dentro da tag &lt;pre&gt; vai ser considerado com todos os
+      espaços em branco, quebras de linha, etc. É bom para representar linhas de
+      código-fonte.
+    </p>
+
+    <h2>Citações</h2>
+    <p>
+      Albert Einstein disse o seguinte, <q>dezenove não é vinte</q>. Ao colocar
+      a tag &lt;q&gt;, você dá sentido, semântica à citação. Você não dá apenas
+      a forma, como seria se você apenas inserisse as aspas "".
+    </p>
+    <blockquote cite="google.com/images">
+      A blockquote aparece destacada horizontalmente, para utilizar esta tag,
+      basta digitar &lt;blockquote&gt;. Também há a opção de você indicar que
+      autor/página/etc. você está citando em seu blockquote. Ao indicar a
+      citação dentro da tag, os mecanismos internos de pesquisa irão saber que
+      você está citando este autor em específico, mesmo não afetando em nada no
+      âmbito visual do seu website.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>
+      <abbr title="HyperText Markup Language">HTML</abbr>,
+      <abbr title="Cascading Style Sheets">CSS</abbr>,
+      <abbr title="JavaScript">JS</abbr>, são todas siglas/abreviações de
+      palavras maiores. Para utilizar esta abreviação, basta inserir a tag
+      &lt;abbr&gt;, podendo indicar no espaço "title = " o significado total
+      daquela palavra. Este title mostrará ao leitor quando ele passar o mouse
+      sobre a abreviação.
+    </p>
+  </body>
+  <h2>Texto invertido</h2>
+  <p>
+    <bdo dir="ltr">adasdasdad</bdo>
+    <bdo dir="rtl"> Isto é um texto invertido Right To Left</bdo>
+  </p>
+</html>

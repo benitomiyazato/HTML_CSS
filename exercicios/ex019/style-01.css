@@ -1,0 +1,33 @@
+@charset "UTF-8";
+div {
+  display: inline-block;
+  border: 5px solid rgb(78, 78, 78);
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+}
+
+div.menu:active {
+  background-color: blueviolet;
+}
+
+div > p {
+  display: none;
+}
+
+div#a:hover > p {
+  display: inline-block;
+}
+
+div#a:hover {
+  background-color: rgb(253, 95, 95);
+}
+div#b:hover {
+  background-color: lightblue;
+}
+div#c:hover {
+  background-color: lightgreen;
+}

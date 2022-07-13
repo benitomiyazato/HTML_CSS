@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap");
+body {
+  font-family: "Finlandica", sans-serif;
+  font-size: 1.2em;
+}
+h1 {
+  font-family: Finlandica;
+  font-weight: bolder;
+}
+p {
+  font: normal lighter 1em Finlandica;
+}

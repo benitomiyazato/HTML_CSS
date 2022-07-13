@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas em HTML</title>
+  </head>
+  <body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <p>
+      Listas ordenadas são aquelas onde a ordem faz diferença. Ex.: <br />
+      1- Acordar <br />
+      2- Escovar os dentes
+    </p>
+    <p>
+      Para criar uma lista ordenada, basta utilizar a tag &lt;ol&gt;
+      (<strong>O</strong>rdered <strong>L</strong>ist). Para cada item da lista,
+      basta utilizar a tag: &lt;li&gt;(<strong>L</strong>ist
+      <strong>I</strong>tem).
+    </p>
+
+    <ol type="a" start="2">
+      <li>Acordar</li>
+      <li>Dormir</li>
+    </ol>
+
+    <h2>Listas não-ordenadas</h2>
+    <p>
+      Listas ordenadas são aquelas onde a ordem não faz diferença. Ex.: <br />
+      Acordar <br />
+      Escovar os dentes
+    </p>
+    <p>
+      Para criar uma lista ordenada, basta utilizar a tag &lt;ul&gt;
+      (<strong>O</strong>rdered <strong>L</strong>ist). Para cada item da lista,
+      basta utilizar a tag: &lt;li&gt;(<strong>L</strong>ist
+      <strong>I</strong>tem).
+    </p>
+
+    <ul type="square">
+      <!--types = disc, circle e square-->
+      <li>Alface</li>
+      <li>Tomate</li>
+      <li>Leite</li>
+      <li>Ovo</li>
+    </ul>
+
+    <h2>Melhores Pokémon de cada tipo</h2>
+    <ol>
+      <li><h3>Fogo</h3></li>
+      <ul type="circle">
+        <li><h4>Charizard</h4></li>
+        <img
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
+          alt="Charizard"
+        />
+        <p>Pokemon inicial de fogo da região de Kanto</p>
+        <li><h4>Infernape</h4></li>
+        <img
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/392.png"
+          alt=""
+        />
+        <p>Pokemon inicial de fogo da região de Sinnoh</p>
+        <li><h4>Darmanitan</h4></li>
+        <img
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/555.png"
+          alt=""
+        />
+        <p>Sweeper de fogo, ótima combinação de Choice Band + Flare Blitz</p>
+      </ul>
+      <li><h3>Psíquico</h3></li>
+      <ul>
+        <li><h4>Alakazam</h4></li>
+        <img
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png"
+          alt=""
+        />
+        <p>
+          Mesmo sendo da região de Kanto, continua sendo um dos melhores sweeper
+          psíquico para completar qualquer campanha, embora não seja tão
+          poderoso no competitivo.
+        </p>
+        <li><h4>Reuniclus</h4></li>
+        <img
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/579.png"
+          alt=""
+        />
+        <p>
+          Forte pokémon psíquico para o competitivo, atua como um forte tank
+          devido a sua habilidade "Magic Guard".
+        </p>
+        <li><h4>Slowbro</h4></li>
+        <img
+          src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/080.png"
+          alt=""
+        />
+        <p>
+          Slowbro já é um Pokémon mais subestimado, porém atua com protagonismo
+          no tier Under Used, devido a sua forte capacidade de tankar fortes
+          sweepers, além de sua boa tipagem e moveset disponível.
+        </p>
+      </ul>
+    </ol>
+
+    <h2>Lista de definição</h2>
+    <p>
+      Listas de definição (&lt;dt&gt; definition list) servem como uma espécie
+      de dicionário, onde você insere um termo (dt - definition term) e uma
+      definição (dd - definition description)
+    </p>
+
+    <dl>
+      <dt>Pokédex</dt>
+      <dd>
+        Equipamento utilizado pelos treinadores Pokémon para registrar sua
+        aventura pela região, bem como para obter informações valiosas sobre
+        pokémon desconhecidos, como sua tipagem, movimentos, evoluções e
+        diversas outras informações que podem ser de grande uso para um
+        treinador que saiba desfrutar dessas funcionalidades com todo seu
+        potencial.
+      </dd>
+    </dl>
+  </body>
+</html>

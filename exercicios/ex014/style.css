@@ -1,0 +1,16 @@
+* {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to top, #2C577A, #1A3347);
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #d4ae6a;
+}
+
+p {
+  color: #aa8139;
+}
