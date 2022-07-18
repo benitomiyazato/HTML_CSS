@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      table {
+        width: 400px;
+        height: 350px;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 6px;
+        text-align: center;
+      }
+
+      .top {
+        vertical-align: top;
+      }
+
+      .bottom {
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Minha primeira tabela em HTML5</h1>
+    <!--
+        Hierarquia de Tabelas em HTML
+        Table
+            Table Row = linha da tabela
+                Table Header = cabeçalho
+                Table Data = data
+
+    -->
+    <table>
+      <tr>
+        <td class="top">A1</td>
+        <td class="top">B1</td>
+        <td class="top">C1</td>
+      </tr>
+      <tr>
+        <td class="bottom">A2</td>
+        <td class="bottom">B2</td>
+        <td class="bottom">C2</td>
+      </tr>
+      <tr>
+        <td>A3</td>
+        <td>B3</td>
+        <td>C3</td>
+      </tr>
+    </table>
+  </body>
+</html>
