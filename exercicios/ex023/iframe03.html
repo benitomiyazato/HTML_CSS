@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navegação em Iframes</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0px;
+    }
+
+    ul {
+      margin: 10px 40px;
+    }
+
+    li {
+      padding: 5px;
+      list-style-type: none;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 300px;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: black;
+    }
+  </style>
+  <body>
+    <h1>Escolha qual site deseja visitar!</h1>
+    <ul>
+      <li><a href="pages/pag001.html" target="iframe">Página nº1</a></li>
+      <li><a href="pages/pag002.html" target="iframe">Página nº2</a></li>
+      <li><a href="pages/pag003.html" target="iframe">Página nº3</a></li>
+    </ul>
+
+    <iframe src="" name="iframe" frameborder="0"></iframe>
+  </body>
+</html>
