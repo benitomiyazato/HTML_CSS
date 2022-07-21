@@ -62,18 +62,31 @@
       </div>
       <div>
         <label for="birthday">Data de Nascimento:</label>
+        <input type="date" name="birthday" id="birthday" required />
+      </div>
+      <div>
+        <label for="birth-hour">Horário de Nascimento:</label>
+        <input type="time" name="birth-hour" id="birth-hour" />
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
         <input
-          type="date"
-          name="birthday"
-          id="birthday"
+          type="email"
+          name="email"
+          id="email"
           required
+          autocomplete="email"
         />
       </div>
-        <label for="birth-hour">Horário de Nascimento:</label>
+      <div>
+        <label for="tel">Telefone:</label>
         <input
-          type="time"
-          name="birth-hour"
-          id="birth-hour"
+          pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$"
+          type="tel"
+          name="tel"
+          id="tel"
+          required
+          autocomplete="tel"
         />
       </div>
       <div>
