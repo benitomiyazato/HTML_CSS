@@ -8,10 +8,16 @@
   </head>
   <body>
     <h1>Formulários em HTML5</h1>
-    <form>
-      <p>Name: <input type="text" name="name" id="name" /></p>
-      <p>Last Name: <input type="text" name="last-name" id="last-name" /></p>
-      <input type="submit" value="Cadastrar" />
+    <form action="cadastro.php">
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+      </p>
+      <p>
+        <label for="last-name">Last Name:</label>
+        <input type="text" name="last-name" id="last-name" required />
+      </p>
+      <input type="submit" value="Sign Up" />
     </form>
   </body>
 </html>
