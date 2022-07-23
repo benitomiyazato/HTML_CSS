@@ -11,85 +11,170 @@
         padding: 0px;
       }
 
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 1rem;
+      }
+
       div {
         padding: 5px;
         margin: 10px;
+      }
+
+      fieldset {
+        padding: 1rem;
+        margin: 1rem;
+      }
+
+      .checkbox {
+        margin-right: 0.5rem;
       }
     </style>
   </head>
   <body>
     <h1>Atributos de Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-      <div>
-        <label for="usuario">Usuário:</label>
-        <input
-          type="text"
-          name="usuario"
-          id="usuario"
-          required
-          minlength="5"
-          maxlength="15"
-          placeholder="Insira seu usuário"
-          size="15"
-          autocomplete="username"
-        />
-      </div>
-      <div>
-        <label for="senha">Senha:</label>
-        <input
-          type="password"
-          name="senha"
-          id="senha"
-          required
-          minlength="8"
-          maxlength="15"
-          placeholder="Insira sua senha"
-          size="15"
-          autocomplete="new-password"
-        />
-      </div>
-      <div>
-        <label for="media">Média escolar:</label>
-        <input
-          type="number"
-          name="media"
-          id="media"
-          required
-          min="0"
-          max="10"
-          step="0.1"
-        />
-      </div>
-      <div>
-        <label for="birthday">Data de Nascimento:</label>
-        <input type="date" name="birthday" id="birthday" required />
-      </div>
-      <div>
-        <label for="birth-hour">Horário de Nascimento:</label>
-        <input type="time" name="birth-hour" id="birth-hour" />
-      </div>
-      <div>
-        <label for="email">E-mail:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          required
-          autocomplete="email"
-        />
-      </div>
-      <div>
-        <label for="tel">Telefone:</label>
-        <input
-          pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$"
-          type="tel"
-          name="tel"
-          id="tel"
-          required
-          autocomplete="tel"
-        />
-      </div>
-      <div>
+      <fieldset>
+        <legend>Aprendendo Formulários</legend>
+        <div>
+          <label for="usuario">Usuário:</label>
+          <input
+            type="text"
+            name="usuario"
+            id="usuario"
+            required
+            minlength="5"
+            maxlength="15"
+            placeholder="Insira seu usuário"
+            size="15"
+            autocomplete="username"
+          />
+        </div>
+        <div>
+          <label for="senha">Senha:</label>
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            required
+            minlength="8"
+            maxlength="15"
+            placeholder="Insira sua senha"
+            size="15"
+            autocomplete="new-password"
+          />
+        </div>
+        <div>
+          <label for="media">Média escolar:</label>
+          <input
+            type="number"
+            name="media"
+            id="media"
+            required
+            min="0"
+            max="10"
+            step="0.1"
+          />
+        </div>
+        <div>
+          <label for="birthday">Data de Nascimento:</label>
+          <input type="date" name="birthday" id="birthday" required />
+        </div>
+        <div>
+          <label for="birth-hour">Horário de Nascimento:</label>
+          <input type="time" name="birth-hour" id="birth-hour" />
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="email"
+          />
+        </div>
+        <div>
+          <label for="tel">Telefone:</label>
+          <input
+            pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$"
+            type="tel"
+            name="tel"
+            id="tel"
+            required
+            autocomplete="tel"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Linguagens Favoritas</legend>
+        <div>
+          <input class="checkbox" type="checkbox" name="html" id="html" /><label
+            for="html"
+            >HTML</label
+          ><br />
+        </div>
+        <div>
+          <input class="checkbox" type="checkbox" name="css" id="css" /><label
+            for="css"
+            >CSS</label
+          ><br />
+        </div>
+        <div>
+          <input class="checkbox" type="checkbox" name="js" id="js" /><label
+            for="js"
+            >JavaScript</label
+          ><br />
+        </div>
+        <div>
+          <input class="checkbox" type="checkbox" name="java" id="java" /><label
+            for="java"
+            >Java</label
+          ><br />
+        </div>
+        <div>
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="python"
+            id="python"
+          /><label for="python">Python</label><br />
+        </div>
+        <div>
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="c-sharp"
+            id="c-sharp"
+          /><label for="c-sharp">C#</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Sexo</legend>
+        <div>
+          <input
+            class="checkbox"
+            type="radio"
+            name="sexo"
+            id="sexo-feminino"
+            value="F"
+          /><label for="sexo-feminino">Feminino</label>
+          <br />
+          <input
+            class="checkbox"
+            type="radio"
+            name="sexo"
+            id="sexo-masculino"
+            value="M"
+          /><label for="sexo-masculino">Masculino</label>
+          <br />
+        </div>
+      </fieldset>
+      <div style="text-align: right; margin-right: 2rem">
         <input type="submit" value="Cadastrar" />
         <input type="reset" value="Limpar campos" />
       </div>
