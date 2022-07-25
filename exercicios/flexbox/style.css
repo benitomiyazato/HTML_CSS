@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.title {
+  padding: 1rem;
+  text-align: center;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.small-title {
+  font-size: 1rem;
+}
+
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  margin: 3rem auto;
+  background-color: darkslateblue;
+  max-width: 1000px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.item {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+  background: green;
+
+  width: 150px;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.7em;
+}
+
+.item:hover {
+  color: white;
+  transition-duration: 250ms;
+}
