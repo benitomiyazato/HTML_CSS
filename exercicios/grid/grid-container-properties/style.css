@@ -24,13 +24,23 @@ body {
 #container {
   background-color: pink;
   display: grid;
+  gap: 1rem; /* gap: [gap-row] [gap-column]  */
+
   /*
     auto-fill = creates columns as long as you have the specified width available
     auto-fit = even if you have available space, does not creates new columns if you dont have items to fill them
   */
   grid-template-columns: repeat(3, 1fr);
+
   grid-template-rows: 100px 50px;
   grid-auto-rows: 50px;
+
+  /* align-items: center;
+  justify-items: stretch; */
+
+  /* place-items: [align-items] [justify-items] */
+  place-items: center stretch;
+
   outline: 5px solid purple;
   height: 60vh;
   width: 95vw;
